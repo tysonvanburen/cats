@@ -1,0 +1,25 @@
+<h1>All about cats</h1>
+  <nav>
+    <a href='/me'>Learn about me</a>
+    <a href='/family'>About my family</a>
+    <a href='/dogs'>About dogs</a>
+  </nav>
+    <br clear="all" />
+<div class="photo">
+  <img src="http://mypages.valdosta.edu/psmckinley/cat2.jpg">
+</div>
+<% unless @width.to_i.zero? && @height.to_i.zero? %>
+  <div class="photo">
+    <img src="http://placekitten.com/<%= @width %>/<%= @height %>"/>
+  </div>
+<% end %>
+<div class="photo">
+  <img src="http://jasonlefkowitz.net/wp-content/uploads/2013/07/Cute-Cats-cats-33440930-1280-800.jpg" alt="" />
+</div>
+<div class="three-col">
+  <p>
+    The domestic cat (Felis catus or Felis silvestris catus) is a small, usually furry, domesticated, and carnivorous mammal.
+    It is often called the housecat when kept as an indoor pet, or simply the cat when there is no need to distinguish it from other felids and felines.
+    Cats are often valued by humans for companionship and their ability to hunt vermin and household pests.
+  </p>
+</div>
